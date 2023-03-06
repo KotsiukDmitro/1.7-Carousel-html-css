@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.corousel {
+  width: 100%;
+  overflow-x: scroll;
+  display: flex;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: red;
+}
+
+.slide {
+  background-size: cover;
+  height: 100vh;
+  flex: 0 0 100%;
+  position: relative;
+}
+
+.slide-1 {
+  background-image: url(img-1.jpg);
+}
+
+.slide-2 {
+  background-image: url(img-2.jpg);
+}
+
+.slide-3 {
+  background-image: url(img-3.jpg);
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text {
+  text-align: center;
+  width: 70%;
+}
+
+.navigation-group {
+  display: flex;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navigation {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.active {
+  background-color: black;
+}
+
+.button-next {
+  width: 20px;
+  height: 20px;
+  border-top: 5px solid white;
+  border-right: 5px solid white;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+  left: 90%;
+}
+
+.button-prew {
+  width: 20px;
+  height: 20px;
+  border-top: 5px solid white;
+  border-left: 5px solid white;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+
+/*# sourceMappingURL=style.map */
